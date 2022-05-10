@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9B19B52829FF9500B95696 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B19B42829FF9500B95696 /* Strings.swift */; };
 		4BD3C0CD2829C66900EDA4C6 /* EnvisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */; };
 		4BD3C0CF2829C66900EDA4C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */; };
 		4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		4BD3C0DE2829C66B00EDA4C6 /* EnvisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0DD2829C66B00EDA4C6 /* EnvisionTests.swift */; };
 		4BD3C0E82829C66B00EDA4C6 /* EnvisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */; };
 		4BD3C0EA2829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E92829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift */; };
-		4BD3C0FB2829D9FE00EDA4C6 /* Home.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0FA2829D9FE00EDA4C6 /* Home.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B9B19B42829FF9500B95696 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		4BD3C0C92829C66900EDA4C6 /* Envision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Envision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionApp.swift; sourceTree = "<group>"; };
 		4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		4BD3C0E32829C66B00EDA4C6 /* EnvisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionUITests.swift; sourceTree = "<group>"; };
 		4BD3C0E92829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4BD3C0FA2829D9FE00EDA4C6 /* Home.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Home.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 		4BD3C0FD2829DB2900EDA4C6 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3C0FA2829D9FE00EDA4C6 /* Home.strings */,
+				4B9B19B42829FF9500B95696 /* Strings.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -169,7 +169,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3C0ED2829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision" */;
 			buildPhases = (
-				4BC00A922829DF1C004089E7 /* R.swift */,
 				4BD3C0C52829C66900EDA4C6 /* Sources */,
 				4BD3C0C62829C66900EDA4C6 /* Frameworks */,
 				4BD3C0C72829C66900EDA4C6 /* Resources */,
@@ -189,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3C0F02829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "EnvisionTests" */;
 			buildPhases = (
+				4B9B19A92829F5F700B95696 /* R.swift */,
 				4BD3C0D52829C66B00EDA4C6 /* Sources */,
 				4BD3C0D62829C66B00EDA4C6 /* Frameworks */,
 				4BD3C0D72829C66B00EDA4C6 /* Resources */,
@@ -199,6 +199,8 @@
 				4BD3C0DB2829C66B00EDA4C6 /* PBXTargetDependency */,
 			);
 			name = EnvisionTests;
+			packageProductDependencies = (
+			);
 			productName = EnvisionTests;
 			productReference = 4BD3C0D92829C66B00EDA4C6 /* EnvisionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -207,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3C0F32829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "EnvisionUITests" */;
 			buildPhases = (
+				4B9B19AA2829F62D00B95696 /* R.swift */,
 				4BD3C0DF2829C66B00EDA4C6 /* Sources */,
 				4BD3C0E02829C66B00EDA4C6 /* Frameworks */,
 				4BD3C0E12829C66B00EDA4C6 /* Resources */,
@@ -217,6 +220,8 @@
 				4BD3C0E52829C66B00EDA4C6 /* PBXTargetDependency */,
 			);
 			name = EnvisionUITests;
+			packageProductDependencies = (
+			);
 			productName = EnvisionUITests;
 			productReference = 4BD3C0E32829C66B00EDA4C6 /* EnvisionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -273,7 +278,6 @@
 			files = (
 				4BD3C0D42829C66B00EDA4C6 /* Preview Assets.xcassets in Resources */,
 				4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */,
-				4BD3C0FB2829D9FE00EDA4C6 /* Home.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +298,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4BC00A922829DF1C004089E7 /* R.swift */ = {
+		4B9B19A92829F5F700B95696 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -308,11 +312,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				$SRCROOT/EnvisionTests/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$SRCROOT/../../build/Debug/rswift\" generate \"$SRCROOT/EnvisionTests/R.generated.swift\"\n";
+		};
+		4B9B19AA2829F62D00B95696 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/RswiftUIAppClip/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../../build/Debug/rswift\" generate \"$SRCROOT/EnvisionUITests/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -322,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD3C0CF2829C66900EDA4C6 /* ContentView.swift in Sources */,
+				4B9B19B52829FF9500B95696 /* Strings.swift in Sources */,
 				4BD3C0CD2829C66900EDA4C6 /* EnvisionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -463,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
