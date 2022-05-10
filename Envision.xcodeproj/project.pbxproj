@@ -107,17 +107,8 @@
 				4BD3C0F62829D8F100EDA4C6 /* Application */,
 				4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */,
 				4BD3C0FC2829DB1E00EDA4C6 /* Resources */,
-				4BD3C0D22829C66B00EDA4C6 /* Preview Content */,
 			);
 			path = Envision;
-			sourceTree = "<group>";
-		};
-		4BD3C0D22829C66B00EDA4C6 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		4BD3C0DC2829C66B00EDA4C6 /* EnvisionTests */ = {
@@ -149,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */,
+				4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */,
 				4BD3C0FD2829DB2900EDA4C6 /* Strings */,
 			);
 			path = Resources;
