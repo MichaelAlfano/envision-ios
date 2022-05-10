@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4B9B19B52829FF9500B95696 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B19B42829FF9500B95696 /* Strings.swift */; };
+		4B9B19B6282A0A4F00B95696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */; };
 		4BD3C0CD2829C66900EDA4C6 /* EnvisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */; };
 		4BD3C0CF2829C66900EDA4C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */; };
 		4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */; };
-		4BD3C0D42829C66B00EDA4C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */; };
 		4BD3C0DE2829C66B00EDA4C6 /* EnvisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0DD2829C66B00EDA4C6 /* EnvisionTests.swift */; };
 		4BD3C0E82829C66B00EDA4C6 /* EnvisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */; };
 		4BD3C0EA2829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E92829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift */; };
@@ -268,7 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3C0D42829C66B00EDA4C6 /* Preview Assets.xcassets in Resources */,
+				4B9B19B6282A0A4F00B95696 /* Preview Assets.xcassets in Resources */,
 				4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Envision/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Envision/Resources\"";
 				DEVELOPMENT_TEAM = GQP7CQRW74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -526,7 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Envision/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Envision/Resources\"";
 				DEVELOPMENT_TEAM = GQP7CQRW74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
