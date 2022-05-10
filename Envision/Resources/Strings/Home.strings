@@ -1,0 +1,29 @@
+/* 
+  Home.strings
+  Envision
+
+  Created by Michael Arthur Alfano on 5/9/22.
+  
+*/
+
+"screen.title" = "Welcome";
+"screen.subtitle" = "The following items require your action.";
+
+"interests.time" = "2 mins";
+"interests.title" = "Choose Interests";
+
+"profile.time" = "10 mins";
+"profile.title" = "Setup Profile";
+
+"professionals.title" = "Industry Professionals";
+"professionals.subtitle.one" = "Filter by";
+"professionals.subtitle.two" = "Interests";
+"professionals.subtitle.three" = "or";
+"professionals.subtitle.four" = "All";
+
+"view.all" = "View All";
+
+"resources.title" = "Resources";
+
+"made.by.title" = "Envision was made by";
+"made.by.name" = "Michael Alfano";

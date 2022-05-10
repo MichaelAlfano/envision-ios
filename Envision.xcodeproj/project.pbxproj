@@ -14,6 +14,7 @@
 		4BD3C0DE2829C66B00EDA4C6 /* EnvisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0DD2829C66B00EDA4C6 /* EnvisionTests.swift */; };
 		4BD3C0E82829C66B00EDA4C6 /* EnvisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */; };
 		4BD3C0EA2829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E92829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift */; };
+		4BD3C0FB2829D9FE00EDA4C6 /* Home.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0FA2829D9FE00EDA4C6 /* Home.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4BD3C0E32829C66B00EDA4C6 /* EnvisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionUITests.swift; sourceTree = "<group>"; };
 		4BD3C0E92829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BD3C0FA2829D9FE00EDA4C6 /* Home.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Home.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BC00A962829E2FB004089E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BD3C0C02829C66900EDA4C6 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +87,7 @@
 				4BD3C0DC2829C66B00EDA4C6 /* EnvisionTests */,
 				4BD3C0E62829C66B00EDA4C6 /* EnvisionUITests */,
 				4BD3C0CA2829C66900EDA4C6 /* Products */,
+				4BC00A962829E2FB004089E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +104,9 @@
 		4BD3C0CB2829C66900EDA4C6 /* Envision */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */,
+				4BD3C0F62829D8F100EDA4C6 /* Application */,
 				4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */,
-				4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */,
+				4BD3C0FC2829DB1E00EDA4C6 /* Resources */,
 				4BD3C0D22829C66B00EDA4C6 /* Preview Content */,
 			);
 			path = Envision;
@@ -127,6 +137,31 @@
 			path = EnvisionUITests;
 			sourceTree = "<group>";
 		};
+		4BD3C0F62829D8F100EDA4C6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4BD3C0FC2829DB1E00EDA4C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */,
+				4BD3C0FD2829DB2900EDA4C6 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BD3C0FD2829DB2900EDA4C6 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3C0FA2829D9FE00EDA4C6 /* Home.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3C0ED2829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision" */;
 			buildPhases = (
+				4BC00A922829DF1C004089E7 /* R.swift */,
 				4BD3C0C52829C66900EDA4C6 /* Sources */,
 				4BD3C0C62829C66900EDA4C6 /* Frameworks */,
 				4BD3C0C72829C66900EDA4C6 /* Resources */,
@@ -143,6 +179,8 @@
 			dependencies = (
 			);
 			name = Envision;
+			packageProductDependencies = (
+			);
 			productName = Envision;
 			productReference = 4BD3C0C92829C66900EDA4C6 /* Envision.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +253,8 @@
 				Base,
 			);
 			mainGroup = 4BD3C0C02829C66900EDA4C6;
+			packageReferences = (
+			);
 			productRefGroup = 4BD3C0CA2829C66900EDA4C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +273,7 @@
 			files = (
 				4BD3C0D42829C66B00EDA4C6 /* Preview Assets.xcassets in Resources */,
 				4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */,
+				4BD3C0FB2829D9FE00EDA4C6 /* Home.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +292,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BC00A922829DF1C004089E7 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BD3C0C52829C66900EDA4C6 /* Sources */ = {
