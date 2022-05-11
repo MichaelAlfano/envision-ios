@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct EnvisionApp: App {
+    
+    let connector = Connector(
+        defaultsManager: DefaultsManager()
+    )
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            connector.makeRootView()
         }
     }
 }

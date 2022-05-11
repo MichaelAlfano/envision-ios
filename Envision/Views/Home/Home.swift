@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     var body: some View {
         Text(Strings.Home.SCREEN_TITLE)
+            .styling(TextStyles.header1)
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomePreview: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Home()
     }
 }
-

@@ -9,8 +9,24 @@
 /* Begin PBXBuildFile section */
 		4B9B19B52829FF9500B95696 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B19B42829FF9500B95696 /* Strings.swift */; };
 		4B9B19B6282A0A4F00B95696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */; };
+		4B9B1A66282B1C4100B95696 /* Onboarding+1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A65282B1C4100B95696 /* Onboarding+1.swift */; };
+		4B9B1A69282B1C5500B95696 /* Onboarding+2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A68282B1C5500B95696 /* Onboarding+2.swift */; };
+		4B9B1A71282B217700B95696 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A6F282B217700B95696 /* DefaultsManager.swift */; };
+		4B9B1A72282B217700B95696 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A70282B217700B95696 /* Connector.swift */; };
+		4B9B1A75282B221400B95696 /* ButtonStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A74282B221400B95696 /* ButtonStyling.swift */; };
+		4B9B1A77282B22C900B95696 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A76282B22C900B95696 /* Colors.swift */; };
+		4B9B1A7A282B2B0200B95696 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A79282B2B0200B95696 /* Color+Extension.swift */; };
+		4B9B1A81282B3BA800B95696 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B1A80282B3B9A00B95696 /* Montserrat-Bold.ttf */; };
+		4B9B1A82282B3BAC00B95696 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B1A7F282B3B8E00B95696 /* Montserrat-Regular.ttf */; };
+		4B9B1A83282B3BAC00B95696 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B1A7C282B3B6200B95696 /* Montserrat-SemiBold.ttf */; };
+		4B9B1A84282B3BAC00B95696 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B1A7E282B3B7A00B95696 /* Montserrat-Medium.ttf */; };
+		4B9B1A85282B3BAC00B95696 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B1A7D282B3B7000B95696 /* Montserrat-Light.ttf */; };
+		4B9B1A88282B3C2A00B95696 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A87282B3C2A00B95696 /* Text.swift */; };
+		4B9B1A8A282B3FC900B95696 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A89282B3FC900B95696 /* Fonts.swift */; };
+		4B9B1A8C282B43E800B95696 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B1A8B282B43E800B95696 /* Text+Extension.swift */; };
+		4B9B1A8F282B465E00B95696 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B1A8E282B465E00B95696 /* Launch Screen.storyboard */; };
 		4BD3C0CD2829C66900EDA4C6 /* EnvisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */; };
-		4BD3C0CF2829C66900EDA4C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */; };
+		4BD3C0CF2829C66900EDA4C6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0CE2829C66900EDA4C6 /* Home.swift */; };
 		4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */; };
 		4BD3C0DE2829C66B00EDA4C6 /* EnvisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0DD2829C66B00EDA4C6 /* EnvisionTests.swift */; };
 		4BD3C0E82829C66B00EDA4C6 /* EnvisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */; };
@@ -36,9 +52,26 @@
 
 /* Begin PBXFileReference section */
 		4B9B19B42829FF9500B95696 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		4B9B1A65282B1C4100B95696 /* Onboarding+1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+1.swift"; sourceTree = "<group>"; };
+		4B9B1A68282B1C5500B95696 /* Onboarding+2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+2.swift"; sourceTree = "<group>"; };
+		4B9B1A6F282B217700B95696 /* DefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		4B9B1A70282B217700B95696 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		4B9B1A74282B221400B95696 /* ButtonStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyling.swift; sourceTree = "<group>"; };
+		4B9B1A76282B22C900B95696 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4B9B1A79282B2B0200B95696 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		4B9B1A7C282B3B6200B95696 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		4B9B1A7D282B3B7000B95696 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		4B9B1A7E282B3B7A00B95696 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		4B9B1A7F282B3B8E00B95696 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4B9B1A80282B3B9A00B95696 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		4B9B1A86282B3BC300B95696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B9B1A87282B3C2A00B95696 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		4B9B1A89282B3FC900B95696 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		4B9B1A8B282B43E800B95696 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		4B9B1A8E282B465E00B95696 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4BD3C0C92829C66900EDA4C6 /* Envision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Envision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionApp.swift; sourceTree = "<group>"; };
-		4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BD3C0CE2829C66900EDA4C6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BD3C0D92829C66B00EDA4C6 /* EnvisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +106,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9B1A60282B113A00B95696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A90282B466900B95696 /* Launch Screen */,
+				4B9B1A6A282B1C8800B95696 /* Home */,
+				4B9B1A67282B1C4700B95696 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B9B1A67282B1C4700B95696 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A65282B1C4100B95696 /* Onboarding+1.swift */,
+				4B9B1A68282B1C5500B95696 /* Onboarding+2.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4B9B1A6A282B1C8800B95696 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3C0CE2829C66900EDA4C6 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B9B1A73282B220200B95696 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A74282B221400B95696 /* ButtonStyling.swift */,
+				4B9B1A76282B22C900B95696 /* Colors.swift */,
+				4B9B1A87282B3C2A00B95696 /* Text.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		4B9B1A78282B2AED00B95696 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A79282B2B0200B95696 /* Color+Extension.swift */,
+				4B9B1A8B282B43E800B95696 /* Text+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B9B1A7B282B3B3700B95696 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A89282B3FC900B95696 /* Fonts.swift */,
+				4B9B1A80282B3B9A00B95696 /* Montserrat-Bold.ttf */,
+				4B9B1A7C282B3B6200B95696 /* Montserrat-SemiBold.ttf */,
+				4B9B1A7E282B3B7A00B95696 /* Montserrat-Medium.ttf */,
+				4B9B1A7F282B3B8E00B95696 /* Montserrat-Regular.ttf */,
+				4B9B1A7D282B3B7000B95696 /* Montserrat-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4B9B1A8D282B444D00B95696 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A6F282B217700B95696 /* DefaultsManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4B9B1A90282B466900B95696 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B1A8E282B465E00B95696 /* Launch Screen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
 		4BC00A962829E2FB004089E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +212,14 @@
 		4BD3C0CB2829C66900EDA4C6 /* Envision */ = {
 			isa = PBXGroup;
 			children = (
+				4B9B1A8D282B444D00B95696 /* Data */,
 				4BD3C0F62829D8F100EDA4C6 /* Application */,
-				4BD3C0CE2829C66900EDA4C6 /* ContentView.swift */,
+				4B9B1A78282B2AED00B95696 /* Extensions */,
+				4B9B1A73282B220200B95696 /* Styling */,
+				4B9B1A60282B113A00B95696 /* Views */,
 				4BD3C0FC2829DB1E00EDA4C6 /* Resources */,
+				4B9B1A86282B3BC300B95696 /* Info.plist */,
+				4B9B1A70282B217700B95696 /* Connector.swift */,
 			);
 			path = Envision;
 			sourceTree = "<group>";
@@ -141,6 +254,7 @@
 			children = (
 				4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */,
 				4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */,
+				4B9B1A7B282B3B3700B95696 /* Fonts */,
 				4BD3C0FD2829DB2900EDA4C6 /* Strings */,
 			);
 			path = Resources;
@@ -268,8 +382,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9B1A85282B3BAC00B95696 /* Montserrat-Light.ttf in Resources */,
+				4B9B1A82282B3BAC00B95696 /* Montserrat-Regular.ttf in Resources */,
+				4B9B1A8F282B465E00B95696 /* Launch Screen.storyboard in Resources */,
 				4B9B19B6282A0A4F00B95696 /* Preview Assets.xcassets in Resources */,
 				4BD3C0D12829C66B00EDA4C6 /* Assets.xcassets in Resources */,
+				4B9B1A81282B3BA800B95696 /* Montserrat-Bold.ttf in Resources */,
+				4B9B1A84282B3BAC00B95696 /* Montserrat-Medium.ttf in Resources */,
+				4B9B1A83282B3BAC00B95696 /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +457,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD3C0CF2829C66900EDA4C6 /* ContentView.swift in Sources */,
+				4B9B1A8A282B3FC900B95696 /* Fonts.swift in Sources */,
+				4B9B1A72282B217700B95696 /* Connector.swift in Sources */,
+				4B9B1A77282B22C900B95696 /* Colors.swift in Sources */,
+				4B9B1A66282B1C4100B95696 /* Onboarding+1.swift in Sources */,
+				4BD3C0CF2829C66900EDA4C6 /* Home.swift in Sources */,
+				4B9B1A69282B1C5500B95696 /* Onboarding+2.swift in Sources */,
+				4B9B1A71282B217700B95696 /* DefaultsManager.swift in Sources */,
+				4B9B1A75282B221400B95696 /* ButtonStyling.swift in Sources */,
+				4B9B1A7A282B2B0200B95696 /* Color+Extension.swift in Sources */,
+				4B9B1A88282B3C2A00B95696 /* Text.swift in Sources */,
 				4B9B19B52829FF9500B95696 /* Strings.swift in Sources */,
+				4B9B1A8C282B43E800B95696 /* Text+Extension.swift in Sources */,
 				4BD3C0CD2829C66900EDA4C6 /* EnvisionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,11 +631,14 @@
 				DEVELOPMENT_TEAM = GQP7CQRW74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Envision/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,11 +663,14 @@
 				DEVELOPMENT_TEAM = GQP7CQRW74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Envision/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
