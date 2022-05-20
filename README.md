@@ -13,6 +13,9 @@ Envision matches your interests with those of industry professionals to show you
 3. STEM career and educational resources
 4. Make and export your own profile
 
+## Flowchart
+![Flowchart](https://user-images.githubusercontent.com/59615799/169549052-c8250ad8-5a25-49eb-91bc-db3fcc460944.png)
+
 --------------------------
 
 [Privacy Policy](https://www.termsfeed.com/live/8deec0be-08b9-4ae8-a703-4eed5c7b5def)
