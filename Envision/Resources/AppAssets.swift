@@ -1,5 +1,5 @@
 //
-//  Assets.swift
+//  AppAssets.swift
 //  Envision
 //
 //  Created by Michael Arthur Alfano on 5/11/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Assets {
+struct AppAssets {
     struct Icons {
         static let check = "check-black"
         static let chevronWhite = "chevron-white"

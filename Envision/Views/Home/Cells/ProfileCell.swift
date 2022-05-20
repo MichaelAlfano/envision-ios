@@ -57,7 +57,7 @@ struct ProfileCell: View {
 struct ProfileCellPreviews: PreviewProvider {
     static var previews: some View {
         ProfileCell(
-            photo: Image(Assets.Images.testProffesional),
+            photo: Image(AppAssets.Images.testProffesional),
             title: "Kieran Hissa",
             subtitle: "Software Engineer",
             paragraph: "Kieran has worked with some of the world’s most cutting-edge technology as a Software Engineer…"

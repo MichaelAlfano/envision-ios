@@ -10,7 +10,7 @@ import SwiftUI
 extension ProfileCellData {
     static func stub() -> ProfileCellData {
         return ProfileCellData (
-            image: Image(Assets.Images.testProffesional),
+            image: Image(AppAssets.Images.testProffesional),
             title: "Kieran Hissa",
             subtitle: "Software Engineer",
             paragraph: "“Kieran has worked with some of the world’s most cutting-edge technology as a Software Engineer…”",

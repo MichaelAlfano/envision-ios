@@ -10,7 +10,7 @@ import SwiftUI
 extension Content {
     static let profiles: [ProfileData] = [
         ProfileData(
-            photo: Image(Assets.Images.michael),
+            photo: Image(AppAssets.Images.michael),
             name: "Michael Alfano",
             career: "Software Engineer",
             whoIAm: "I am a software engineer at the NASA Jet Propulsion Laboratory currently working on the Kepler-442b rover project. Previously, I have worked as a software engineer at Tesla and the NSA. I focus on database architecture and machine learning, specifically computer vision. The most important thing to me is to help others through computer software",
@@ -25,7 +25,7 @@ extension Content {
             ]
         ),
         ProfileData(
-            photo: Image(Assets.Images.hussien),
+            photo: Image(AppAssets.Images.hussien),
             name: "Hussien Tannira",
             career: "Neurosurgeon",
             whoIAm: "I am Hussien,  a surgeon specialized in the nervous system, especially the brain and spinal cord. One of my main interests and important to me at the same time is saving people’s lives and giving them hope after losing it.",
@@ -40,7 +40,7 @@ extension Content {
             ]
         ),
         ProfileData(
-            photo: Image(Assets.Images.amos),
+            photo: Image(AppAssets.Images.amos),
             name: "Amos Smithwick",
             career: "Structural Engineer",
             whoIAm: "I am a structural engineer; I make sure buildings won’t turn into piles of rubble for a living. I have a passion for music, running, and physics! I am a creative and serious person who enjoys solving problems and being challenged. ",

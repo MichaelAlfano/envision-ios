@@ -69,7 +69,7 @@ struct Home: View {
                         Label(Strings.Profile.PROFILE, systemImage: "chevron.right")
                     }
                 }, label: {
-                    Image(Assets.Icons.profile)
+                    Image(AppAssets.Icons.profile)
                         .resizable()
                         .frame(width: 25, height: 25)
                 })
@@ -225,7 +225,7 @@ struct Home: View {
                 Button(action: presenter.linkedInAction) {
                     Label(
                         title: { Text(Strings.MadeBy.LINKEDIN) },
-                        icon: { Image(Assets.Icons.linkedin) }
+                        icon: { Image(AppAssets.Icons.linkedin) }
                     )
                 }
                 Button(action: presenter.emailAction) {
@@ -238,7 +238,7 @@ struct Home: View {
                 HStack {
                     Text(Strings.MadeBy.NAME)
                         .styling(TextStyles.title3Dark)
-                    Image(Assets.Icons.chevronWhite)
+                    Image(AppAssets.Icons.chevronWhite)
                         .resizable()
                         .frame(width: 24, height: 24)
                         .rotationEffect(.degrees(90))

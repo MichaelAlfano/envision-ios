@@ -12,7 +12,7 @@ struct BackButton: View {
     
     var body: some View {
         Button(action: { presentationMode.wrappedValue.dismiss() }) {
-            Image(Assets.Icons.chevronBlack)
+            Image(AppAssets.Icons.chevronBlack)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 55, height: 55)

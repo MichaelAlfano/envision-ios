@@ -16,17 +16,17 @@ struct Profile: View {
     
     init(id: UUID) {
         self.profile = Content.profiles.first(where: { $0.id == id }) ?? ProfileData.error()
-        self.image = profile.photo ?? Image(Assets.Images.onboarding2)
+        self.image = profile.photo ?? Image(AppAssets.Images.onboarding2)
     }
     
     init(profile: ProfileData, photo: Image?) {
         self.profile = profile
-        self.image = photo ?? Image(Assets.Images.onboarding2)
+        self.image = photo ?? Image(AppAssets.Images.onboarding2)
     }
     
     init(profile: ProfileData) {
         self.profile = profile
-        self.image = profile.photo ?? Image(Assets.Images.onboarding2)
+        self.image = profile.photo ?? Image(AppAssets.Images.onboarding2)
     }
     
     var body: some View {

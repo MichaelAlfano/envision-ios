@@ -86,7 +86,7 @@ struct SetupProfile: View {
                 }
             }, label: {
                 ZStack {
-                    (stateProfile.photo ?? Image(Assets.Images.onboarding2))
+                    (stateProfile.photo ?? Image(AppAssets.Images.onboarding2))
                         .resizable()
                         .scaledToFill()
                         .frame(width: 90, height: 90)
@@ -164,7 +164,7 @@ struct SetupProfile: View {
     }
     
     private var editButton: some View {
-        Image(Assets.Icons.edit)
+        Image(AppAssets.Icons.edit)
             .resizable()
             .frame(width: 16, height: 16)
             .scaledToFit()

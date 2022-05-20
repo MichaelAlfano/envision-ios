@@ -69,7 +69,7 @@ extension ProfileData {
     func toCellData() -> ProfileCellData {
         return ProfileCellData(
             id: id,
-            image: photo ?? Image(Assets.Images.onboarding2),
+            image: photo ?? Image(AppAssets.Images.onboarding2),
             title: name,
             subtitle: career,
             paragraph: whoIAm,
@@ -82,7 +82,7 @@ extension ProfileData {
     
     static func placeholder() -> ProfileData {
         return ProfileData(
-            photo: Image(Assets.Images.placeholerProfile),
+            photo: Image(AppAssets.Images.placeholerProfile),
             name: Strings.Profile.NAME,
             career: Strings.Profile.CAREER,
             whoIAm: Strings.Profile.WhoIAm.PLACEHOLDER,
@@ -100,7 +100,7 @@ extension ProfileData {
     
     static func error() -> ProfileData {
         return ProfileData(
-            photo: Image(Assets.Images.onboarding1), // TODO: Change this to empty profile icon
+            photo: Image(AppAssets.Images.onboarding1), // TODO: Change this to empty profile icon
             name: "Error",
             career: "Could not load profile",
             whoIAm: "",
@@ -132,7 +132,7 @@ extension DefaultsManager {
 //            let imageData = try Data(contentsOf: placeholerProfile)
 //            return Image(uiImage: UIImage(data: imageData) ?? UIImage(named: Assets.Images.placeholerProfile)
 //        } placeholerProfile}
-        return Image(Assets.Images.placeholerProfile)
+        return Image(AppAssets.Images.placeholerProfile)
     }
     
     func getProfile() -> ProfileData {

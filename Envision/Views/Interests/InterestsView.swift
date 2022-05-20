@@ -57,7 +57,7 @@ struct InterestsView: View {
                 currentCategory == .career ? stateInterests.toggleCareer(interest) : stateInterests.toggleField(interest)
             }, label: {
                 HStack {
-                    Image((currentCategory == .career ? $stateInterests.career.wrappedValue.contains(interest) : $stateInterests.fields.wrappedValue.contains(interest)) ? Assets.Icons.Radio.selected : Assets.Icons.Radio.unselected)
+                    Image((currentCategory == .career ? $stateInterests.career.wrappedValue.contains(interest) : $stateInterests.fields.wrappedValue.contains(interest)) ? AppAssets.Icons.Radio.selected : AppAssets.Icons.Radio.unselected)
                         .resizable()
                         .frame(width: 20, height: 20)
                     HStack(alignment: .center) {

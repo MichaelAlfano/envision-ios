@@ -24,7 +24,7 @@ struct OnboardingButton: ButtonStyle {
             configuration.label
                 .foregroundColor(Colors.darkBackgroundText)
                 .font(Fonts.title3)
-            Image(Assets.Icons.next)
+            Image(AppAssets.Icons.next)
         }
         .padding(16)
         .padding(.horizontal, 8)

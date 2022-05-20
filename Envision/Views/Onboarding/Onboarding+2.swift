@@ -12,7 +12,7 @@ struct Onboarding2: View {
     
     var body: some View {
         OnboardingView(
-            photo: Image(Assets.Images.onboarding2),
+            photo: Image(AppAssets.Images.onboarding2),
             title: Strings.Onboarding.Slide2.TITLE,
             subTitle: Strings.Onboarding.Slide2.SUB_TITLE,
             buttonText: Strings.Onboarding.Slide2.BUTTON,
