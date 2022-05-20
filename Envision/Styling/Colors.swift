@@ -15,9 +15,12 @@ struct Colors {
     static let secondaryText = Color(hex: 0x000000, alpha: 0.8)
     static let bodyText = Color(hex: 0x000000, alpha: 0.8)
     
+    static let selectedFilter = Color(hex: 0x005288, alpha: 0.2)
+    static let unselectedFilter = Color(hex: 0xFFFFFF)
     static let darkBackgroundText = Color(hex: 0xFFFFFF)
-    
     static let placeholderText = Color(hex: 0xB4B4B4)
-    
     static let onboardingSecondaryText = Color(hex: 0x767676)
+    static let dropShadow = Color(hex: 0x000000, alpha: 0.16)
+    static let textFieldBorder = Color(hex: 0xEAE9EF)
+    static let border = Color(hex: 0xE6E6E6)
 }

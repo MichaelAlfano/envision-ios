@@ -10,13 +10,26 @@ import SwiftUI
 @main
 struct EnvisionApp: App {
     
-    let connector = Connector(
-        defaultsManager: DefaultsManager()
+    let connector: Connector = Connector(
+        defaultsManager: DefaultsManager(),
+        userData: UserData()
     )
+    
+    init() {
+        // UINavigationBar.appearance().isUserInteractionEnabled = false
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().barTintColor = .clear
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().tintColor = .clear
+        UITextView.appearance().backgroundColor = .clear
+    }
     
     var body: some Scene {
         WindowGroup {
-            connector.makeRootView()
+            NavigationView {
+                connector.makeRootView()
+            }
         }
     }
 }

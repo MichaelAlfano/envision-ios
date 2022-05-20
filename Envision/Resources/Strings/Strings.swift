@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Strings {
+struct Strings {
     struct App {
         static let NAME = "Envision"
         static let SLOGAN = "If You Can See It, You Can Be It."
@@ -21,11 +21,23 @@ class Strings {
     struct Interests {
         static let TIME = "2 mins"
         static let TITLE = "Choose Interests"
+        
+        static let SATISFACTION_TITLE = "Career Satisfaction"
+        static let SATISFACTION_SUBTITLE = "Choose the 3 most important factors for your future career satisfaction."
+        static let FIELDS_TITLE = "Fields of Interest"
+        static let FIELDS_SUBTITLE = "Choose the 2 fields you are most interested in."
     }
     
     struct Profile {
+        static let PROFILE = "PROFILE"
+        
         static let TIME = "10 mins"
         static let TITLE = "Setup Profile"
+        
+        static let NAME = "Name"
+        static let CAREER = "Career"
+        
+        static let PLACEHOLDER_ITEM = "Enter your response here."
         
         struct WhoIAm {
             static let TITLE = "Who I am"
@@ -59,17 +71,21 @@ class Strings {
     struct MadeBy {
         static let TITLE = "Envision was made by"
         static let NAME = "Michael Alfano"
+        static let LINKEDIN = "Linked In"
+        static let EMAIL = "Email"
     }
     
     struct Onboarding {
         struct Slide1 {
             static let TITLE = "Discover\nPossibilities"
             static let SUB_TITLE = "We match your interests with those of industry professionals to show you career and educational pathways that you might be interested in."
+            static let BUTTON = "NEXT"
         }
         
         struct Slide2 {
             static let TITLE = "Share\nYour Story"
-            static let SUB_TITLE = "Put your past on paper, envision your future, or give advice to others who are following your path. Design, save, share."
+            static let SUB_TITLE = "Put your past on paper, envision your future, or give advice to others who are following your path. Export your profile as a PDF directly from the app."
+            static let BUTTON = "FINISH"
         }
     }
     
@@ -81,4 +97,14 @@ class Strings {
     static let VIEW_ALL = "View All"
     static let RESOURCES_TITLE = "Resources"
     static let INDUSTRY_INFORMATION = "Industry Information"
+    
+    static let NEXT = "NEXT"
+    static let BACK = "BACK"
+    static let FINISH = "FINISH"
+    
+    static let EXPORT = "Export"
+    static let TAKE_PHOTO = "Take Photo"
+    static let CHOOSE_PHOTO = "Choose Photo"
+    
+    static let EDIT = "Edit"
 }
