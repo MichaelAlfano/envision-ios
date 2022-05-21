@@ -31,10 +31,10 @@ public struct ProfileData: Equatable, Identifiable {
     var whySTEM: String
     var usingSTEM: String
     var adviceForStudents: String
-    var field: String
+    var field: [String]
     var careerFactors: [String]
     
-    init(id: UUID = UUID(), photo: Image, name: String, career: String, whoIAm: String, whySTEM: String, usingSTEM: String, adviceForStudents: String, field: String, careerFactors: [String]) {
+    init(id: UUID = UUID(), photo: Image, name: String, career: String, whoIAm: String, whySTEM: String, usingSTEM: String, adviceForStudents: String, field: [String], careerFactors: [String]) {
         self.id = id
         self.photo = photo
         self.name = name
@@ -56,7 +56,7 @@ public struct ProfileData: Equatable, Identifiable {
         self.whySTEM = whySTEM
         self.usingSTEM = usingSTEM
         self.adviceForStudents = adviceForStudents
-        self.field = ""
+        self.field = []
         self.careerFactors = []
     }
     
@@ -75,7 +75,7 @@ extension ProfileData {
             paragraph: whoIAm,
             interests: Interests(
                 career: careerFactors,
-                fields: [field]
+                fields: field
             )
         )
     }
@@ -89,7 +89,9 @@ extension ProfileData {
             whySTEM: Strings.Profile.WhyStem.PLACEHOLDER,
             usingSTEM: Strings.Profile.UsingStem.PLACEHOLDER,
             adviceForStudents: Strings.Profile.AdviceForStudents.PLACEHOLDER,
-            field: Interests.Fields.computerScience,
+            field: [
+                Interests.Fields.computerScience
+            ],
             careerFactors: [
                 Interests.Career.excitingJob,
                 Interests.Career.jobSecurity,
@@ -107,7 +109,7 @@ extension ProfileData {
             whySTEM: "",
             usingSTEM: "",
             adviceForStudents: "",
-            field: "",
+            field: [],
             careerFactors: []
         )
     }

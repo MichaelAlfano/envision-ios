@@ -49,3 +49,26 @@ struct EditCareerTextFieldStyle: TextFieldStyle {
         }
     }
 }
+
+struct SearchBarTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<_Label>) -> some View {
+        VStack(spacing: 0) {
+            HStack {
+                configuration
+                    .font(Fonts.subtitle3)
+                    .foregroundColor(Colors.primaryText)
+                    .padding(.vertical, 12)
+                    .padding(.horizontal, 18)
+                Spacer()
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(Colors.searchBar)
+                    .padding(.trailing, 14)
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .strokeBorder(Colors.textFieldBorder, lineWidth: 1)
+            )
+            .padding(.horizontal, 16)
+        }
+    }
+}
