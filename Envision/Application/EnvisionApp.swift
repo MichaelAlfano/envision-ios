@@ -16,13 +16,13 @@ struct EnvisionApp: App {
     )
     
     init() {
-        // UINavigationBar.appearance().isUserInteractionEnabled = false
         UINavigationBar.appearance().backgroundColor = .clear
         UINavigationBar.appearance().barTintColor = .clear
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().tintColor = .clear
         UITextView.appearance().backgroundColor = .clear
+        UIScrollView.appearance().keyboardDismissMode = .onDrag
     }
     
     var body: some Scene {

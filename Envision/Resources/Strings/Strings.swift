@@ -29,7 +29,7 @@ struct Strings {
     }
     
     struct Profile {
-        static let PROFILE = "PROFILE"
+        static let PROFILE = "Profile"
         
         static let TIME = "10 mins"
         static let TITLE = "Setup Profile"
@@ -107,4 +107,12 @@ struct Strings {
     static let CHOOSE_PHOTO = "Choose Photo"
     
     static let EDIT = "Edit"
+    
+    struct NoResults {
+        static let TITLE = "No Results"
+        static let NIL_TITLE = "0 Results"
+        
+        static let SUBTITLE = "No results for your selection"
+        static let PARAGRAPH = "We are constantly improving our database and will have a professional that matches your interests soon."
+    }
 }

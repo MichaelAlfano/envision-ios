@@ -112,37 +112,69 @@ struct Home: View {
     
     private var industryProffessionals: some View {
         VStack(alignment: .leading, spacing: 0) {
-            HStack {
-                Text(Strings.Professionals.TITLE)
-                    .styling(TextStyles.title2)
-                    .padding(.leading, 30)
-                Image(systemName: "chevron.right")
-                    .padding(.leading, 5)
-            }
+            NavigationLink(
+                destination: ProfessionalsView(
+                    presenter: ProfessionalsViewPresenter(
+                        profile: $profile,
+                        interests: $interests
+                    ),
+                    professionals: presenter.industryProfesionals,
+                    interests: interests
+                ),
+                label: {
+                    HStack {
+                        Text(Strings.Professionals.TITLE)
+                            .styling(TextStyles.title2)
+                            .padding(.leading, 30)
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(Color.black)
+                            .padding(.leading, 5)
+                    }
+                }
+            )
             proffessionalsSubtitle
                 .animation(.none)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(presenter.industryProfesionals) { item in
-                        if filter == .all || item.interests.contains(interests) {
-                            NavigationLink(
-                                destination: Profile(id: item.id),
-                                label: {
-                                    ProfileCell(
-                                        photo: item.image,
-                                        title: item.title,
-                                        subtitle: item.subtitle,
-                                        paragraph: item.paragraph
-                                    )
-                            })
-                            .buttonStyle(Scale())
+                    if filter == .all || hasAnyMatching() {
+                        ForEach(presenter.industryProfesionals) { item in
+                            if filter == .all || item.interests.contains(interests) {
+                                NavigationLink(
+                                    destination: Profile(id: item.id),
+                                    label: {
+                                        ProfileCell(
+                                            photo: item.image,
+                                            title: item.title,
+                                            subtitle: item.subtitle,
+                                            paragraph: item.paragraph
+                                        )
+                                })
+                                .buttonStyle(Scale())
+                            }
                         }
+                        .padding([.horizontal, .bottom], 10)
+                    } else {
+                        ProfileCell(
+                            photo: Image(AppAssets.Images.noResults),
+                            title: Strings.NoResults.TITLE,
+                            subtitle: Strings.NoResults.SUBTITLE,
+                            paragraph: Strings.NoResults.PARAGRAPH
+                        )
+                        .padding([.horizontal, .bottom], 10)
                     }
-                    .padding([.horizontal, .bottom], 10)
                 }
                 .padding(20)
             }
         }
+    }
+    
+    func hasAnyMatching() -> Bool {
+        for professional in presenter.industryProfesionals {
+            if professional.interests.contains(interests) {
+                return true
+            }
+        }
+        return false
     }
     
     private var proffessionalsSubtitle: some View {
