@@ -1,6 +1,6 @@
-<img width="150" alt="Lure Cast App Icon" src="https://user-images.githubusercontent.com/59615799/169546720-b23f31ed-5a68-4cf6-a00f-68bb2f3e49ea.png">
+<img width="150" alt="Envision App Icon" src="https://user-images.githubusercontent.com/59615799/169546720-b23f31ed-5a68-4cf6-a00f-68bb2f3e49ea.png">
 
-# Envision - Career pathways in STEM
+# Envision - Career pathways in Physics
 
 Envision matches your interests with those of industry professionals to show you career and educational pathways that you might be interested in.
 
@@ -8,9 +8,9 @@ Envision matches your interests with those of industry professionals to show you
 
 ## Features
 
-1. Database of industry professionals in the various STEM fields.
+1. Database of industry professionals in physics.
 2. Interest filtering for professionals
-3. STEM career and educational resources
+3. Physics career and educational resources
 4. Make and export your own profile
 
 ## Flowchart
