@@ -36,6 +36,11 @@ struct AppAssets {
         static let noResults = "no-results-image"
         static let universeMore = "universemore-image"
         static let usnews = "usnews-image"
+        static let aapt = "aapt-image"
+        static let donLincoln = "don-lincoln-image"
+        static let sixtySymbols = "sixty-symbols-image"
+        static let veritasium = "veritasium-image"
+        static let pbs = "pbs-image"
     }
     
     struct Brand {

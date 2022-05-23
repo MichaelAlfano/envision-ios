@@ -17,8 +17,6 @@ struct Home: View {
     
     let defaultsManager: DefaultsManager
     
-    @State var filter: HomePresenter.Filters = .all
-    
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
@@ -29,9 +27,6 @@ struct Home: View {
                 credit
             }
         }
-        .onReceive(presenter.$filter, perform: { newValue in
-            filter = newValue
-        })
         .navigationBarHidden(true)
         .background(
             NavigationLink(destination: self.navigateTo, isActive: $isNavigationActive) {
@@ -132,38 +127,25 @@ struct Home: View {
                     }
                 }
             )
-            proffessionalsSubtitle
-                .animation(.none)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    if filter == .all || hasAnyMatching() {
-                        ForEach(presenter.industryProfesionals) { item in
-                            if filter == .all || item.interests.contains(interests) {
-                                NavigationLink(
-                                    destination: Profile(id: item.id),
-                                    label: {
-                                        ProfileCell(
-                                            photo: item.image,
-                                            title: item.title,
-                                            subtitle: item.subtitle,
-                                            paragraph: item.paragraph
-                                        )
-                                })
-                                .buttonStyle(Scale())
-                            }
-                        }
-                        .padding([.horizontal, .bottom], 10)
-                    } else {
-                        ProfileCell(
-                            photo: Image(AppAssets.Images.noResults),
-                            title: Strings.NoResults.TITLE,
-                            subtitle: Strings.NoResults.SUBTITLE,
-                            paragraph: Strings.NoResults.PARAGRAPH
-                        )
-                        .padding([.horizontal, .bottom], 10)
+                    ForEach(presenter.industryProfesionals) { item in
+                        NavigationLink(
+                            destination: Profile(id: item.id),
+                            label: {
+                                ProfileCell(
+                                    photo: item.image,
+                                    title: item.title,
+                                    subtitle: item.subtitle,
+                                    paragraph: item.paragraph
+                                )
+                        })
+                        .buttonStyle(Scale())
                     }
+                    .padding([.horizontal, .bottom], 10)
                 }
                 .padding(20)
+                .padding(.vertical, 5)
             }
         }
     }
@@ -175,55 +157,6 @@ struct Home: View {
             }
         }
         return false
-    }
-    
-    private var proffessionalsSubtitle: some View {
-        HStack {
-            Text(Strings.Professionals.SUBTITLE_ONE)
-                .styling(TextStyles.footnote2)
-            Button(action: {
-                if interests.isComplete() {
-                    Haptics.play(.light)
-                    filter = .interests
-                } else {
-                    Haptics.notify(.error)
-                    AlertHelper.showAlert(title: "No Interests Found", message: "Add your interests to use this filter.")
-                }
-            }, label: {
-                Text(Strings.Professionals.SUBTITLE_TWO)
-                    .styling(TextStyles.title3)
-                    .padding(6)
-                    .padding(.horizontal, 7)
-                    .background(
-                        RoundedRectangle(cornerRadius: 6, style: .continuous)
-                            .fill(filter == .interests ? Colors.selectedFilter : Colors.unselectedFilter)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 6)
-                                    .stroke(Color.black, lineWidth: 2)
-                            )
-                    )
-            })
-            .opacity(interests.isComplete() ? 1.0 : 0.1)
-            .disabled(!interests.isComplete())
-            Text(Strings.Professionals.SUBTITLE_THREE)
-                .styling(TextStyles.footnote2)
-            Button(action: presenter.allAction, label: {
-                Text(Strings.Professionals.SUBTITLE_FOUR)
-                    .styling(TextStyles.title3)
-                    .padding(6)
-                    .padding(.horizontal, 7)
-                    .background(
-                        RoundedRectangle(cornerRadius: 6, style: .continuous)
-                            .fill(filter == .all ? Colors.selectedFilter : Colors.unselectedFilter)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 6)
-                                    .stroke(Color.black, lineWidth: 2)
-                            )
-                    )
-            })
-        }
-        .padding(.leading, 30)
-        .padding(.top, 16)
     }
     
     private var resources: some View {
@@ -245,6 +178,7 @@ struct Home: View {
                     .padding([.horizontal, .bottom], 10)
                 }
                 .padding(20)
+                .padding(.vertical, 5)
             }
         }
     }

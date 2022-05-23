@@ -25,10 +25,10 @@ struct SetupProfile: View {
                     header
                     profileItem(title: Strings.Profile.WhoIAm.TITLE, content: $stateProfile.whoIAm, subtitle: Strings.Profile.WhoIAm.PLACEHOLDER, proxy: proxy)
                         .id(Strings.Profile.WhoIAm.TITLE)
-                    profileItem(title: Strings.Profile.WhyStem.TITLE, content: $stateProfile.whySTEM, subtitle: Strings.Profile.WhyStem.PLACEHOLDER, proxy: proxy)
-                        .id(Strings.Profile.WhyStem.TITLE)
-                    profileItem(title: Strings.Profile.UsingStem.TITLE, content: $stateProfile.usingSTEM, subtitle: Strings.Profile.UsingStem.PLACEHOLDER, proxy: proxy)
-                        .id(Strings.Profile.UsingStem.TITLE)
+                    profileItem(title: Strings.Profile.WhyPhysics.TITLE, content: $stateProfile.whyPhysics, subtitle: Strings.Profile.WhyPhysics.PLACEHOLDER, proxy: proxy)
+                        .id(Strings.Profile.WhyPhysics.TITLE)
+                    profileItem(title: Strings.Profile.UsingPhysics.TITLE, content: $stateProfile.usingPhysics, subtitle: Strings.Profile.UsingPhysics.PLACEHOLDER, proxy: proxy)
+                        .id(Strings.Profile.UsingPhysics.TITLE)
                     profileItem(title: Strings.Profile.AdviceForStudents.TITLE, content: $stateProfile.adviceForStudents, subtitle: Strings.Profile.AdviceForStudents.PLACEHOLDER, proxy: proxy)
                         .id(Strings.Profile.AdviceForStudents.TITLE)
                 }

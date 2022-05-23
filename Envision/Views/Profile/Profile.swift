@@ -36,11 +36,11 @@ struct Profile: View {
                 if !profile.whoIAm.isBlank {
                     profileItem(title: Strings.Profile.WhoIAm.TITLE, content: profile.whoIAm)
                 }
-                if !profile.whySTEM.isBlank {
-                    profileItem(title: Strings.Profile.WhyStem.TITLE, content: profile.whySTEM)
+                if !profile.whyPhysics.isBlank {
+                    profileItem(title: Strings.Profile.WhyPhysics.TITLE, content: profile.whyPhysics)
                 }
-                if !profile.usingSTEM.isBlank {
-                    profileItem(title: Strings.Profile.UsingStem.TITLE, content: profile.usingSTEM)
+                if !profile.usingPhysics.isBlank {
+                    profileItem(title: Strings.Profile.UsingPhysics.TITLE, content: profile.usingPhysics)
                 }
                 if !profile.adviceForStudents.isBlank {
                     profileItem(title: Strings.Profile.AdviceForStudents.TITLE, content: profile.adviceForStudents)

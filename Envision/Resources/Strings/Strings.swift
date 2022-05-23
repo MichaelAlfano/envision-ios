@@ -44,19 +44,19 @@ struct Strings {
             static let PLACEHOLDER = "Describe who you are and aspects of your background that are important to you."
         }
         
-        struct WhyStem {
-            static let TITLE = "Why STEM"
-            static let PLACEHOLDER = "Give a brief background including how you became interested in STEM, the degree(s) you earned(if any), and the steps you took to reach your career through STEM."
+        struct WhyPhysics {
+            static let TITLE = "Why Physics"
+            static let PLACEHOLDER = "Give a brief background including how you became interested in physics, the degree(s) you earned, and the steps you took to reach your career through physics."
         }
         
-        struct UsingStem {
-            static let TITLE = "Using STEM"
-            static let PLACEHOLDER = "Describe the skills and traits from your STEM related degree that you use in your career. Describe ways you have contributed to your field, or ways your work benefits others, or interesting projects/accomplishments that have occurred in your career."
+        struct UsingPhysics {
+            static let TITLE = "Using Physics"
+            static let PLACEHOLDER = "Describe the skills and traits from your physics degree(s) that you use in your career. Describe ways you have contributed to your field, or ways your work benefits others, or interesting projects/accomplishments that have occurred in your career."
         }
         
         struct AdviceForStudents {
             static let TITLE = "Advice For Students"
-            static let PLACEHOLDER = "Suggest ways for students to pursue their career goals using a STEM related degree, what they may not know about STEM, etc."
+            static let PLACEHOLDER = "Suggest ways for students to pursue their career goals using a physics degree, what they may not know about Physics, etc."
         }
     }
     

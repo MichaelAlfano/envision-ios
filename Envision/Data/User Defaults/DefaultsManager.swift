@@ -24,10 +24,10 @@ class DefaultsManager {
             return RawKeys.CAREER
         case .whoIAm:
             return RawKeys.WHO_I_AM
-        case .whySTEM:
-            return RawKeys.WHY_STEM
-        case .usingSTEM:
-            return RawKeys.USING_STEM
+        case .whyPhysics:
+            return RawKeys.WHY_PHYSICS
+        case .usingPhysics:
+            return RawKeys.USING_PHYSICS
         case .advice:
             return RawKeys.ADVICE
         case .careerInterests:
@@ -68,8 +68,8 @@ enum DefaultKeys: String {
     case name
     case career
     case whoIAm
-    case whySTEM
-    case usingSTEM
+    case whyPhysics
+    case usingPhysics
     case advice
     case careerInterests
     case fieldInterests
@@ -81,8 +81,8 @@ fileprivate class RawKeys {
     static let NAME = "name"
     static let CAREER = "career"
     static let WHO_I_AM = "who-i-am"
-    static let WHY_STEM = "why-stem"
-    static let USING_STEM = "using-stem"
+    static let WHY_PHYSICS = "why-physics"
+    static let USING_PHYSICS = "using-physics"
     static let ADVICE = "advice"
     static let CAREER_INTERESTS = "career-interests"
     static let FIELD_INTERESTS = "field-interests"
