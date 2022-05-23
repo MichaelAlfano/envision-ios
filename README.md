@@ -18,9 +18,6 @@ App Store Listing - Coming Soon
 ## Flowchart
 ![Flowchart](https://user-images.githubusercontent.com/59615799/169549052-c8250ad8-5a25-49eb-91bc-db3fcc460944.png)
 
-## Feature Prioritization
-![Feature Prioritization](https://user-images.githubusercontent.com/59615799/169589891-3c125d23-8f71-4c51-bbf9-e9ce87879831.png)
-
 --------------------------
 
 [Privacy Policy](https://www.termsfeed.com/live/8deec0be-08b9-4ae8-a703-4eed5c7b5def)
