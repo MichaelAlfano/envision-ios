@@ -500,7 +500,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3C0F02829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision PhysicsTests" */;
 			buildPhases = (
-				4B9B19A92829F5F700B95696 /* R.swift */,
 				4BD3C0D52829C66B00EDA4C6 /* Sources */,
 				4BD3C0D62829C66B00EDA4C6 /* Frameworks */,
 				4BD3C0D72829C66B00EDA4C6 /* Resources */,
@@ -521,7 +520,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD3C0F32829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision PhysicsUITests" */;
 			buildPhases = (
-				4B9B19AA2829F62D00B95696 /* R.swift */,
 				4BD3C0DF2829C66B00EDA4C6 /* Sources */,
 				4BD3C0E02829C66B00EDA4C6 /* Frameworks */,
 				4BD3C0E12829C66B00EDA4C6 /* Resources */,
@@ -614,49 +612,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4B9B19A92829F5F700B95696 /* R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = R.swift;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/EnvisionTests/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/../../build/Debug/rswift\" generate \"$SRCROOT/EnvisionTests/R.generated.swift\"\n";
-		};
-		4B9B19AA2829F62D00B95696 /* R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = R.swift;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/RswiftUIAppClip/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/../../build/Debug/rswift\" generate \"$SRCROOT/EnvisionUITests/R.generated.swift\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BD3C0C52829C66900EDA4C6 /* Sources */ = {

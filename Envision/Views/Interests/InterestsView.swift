@@ -117,12 +117,11 @@ struct InterestsView: View {
     }
     
     private var continueDisabled: Bool {
-//        if currentCategory == .career {
-//            return $stateInterests.career.count != 3
-//        } else {
-//            return $stateInterests.fields.count != 2
-//        }
-        return false
+        if currentCategory == .career {
+            return $stateInterests.career.count != 3
+        } else {
+            return $stateInterests.fields.count != 2
+        }
     }
 }
 
