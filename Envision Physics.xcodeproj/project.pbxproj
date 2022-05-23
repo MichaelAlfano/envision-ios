@@ -834,7 +834,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Envision/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Envision Physics";
+				INFOPLIST_KEY_CFBundleDisplayName = Envision;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is needed to add and change your profile photo.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We use this to add your profile to photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -871,7 +871,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Envision/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Envision Physics";
+				INFOPLIST_KEY_CFBundleDisplayName = Envision;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is needed to add and change your profile photo.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We use this to add your profile to photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
