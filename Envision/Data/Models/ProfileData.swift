@@ -16,8 +16,8 @@ public struct ProfileData: Equatable, Identifiable {
             lhs.name == rhs.name &&
             lhs.career == rhs.career &&
             lhs.whoIAm == rhs.whoIAm &&
-            lhs.whySTEM == rhs.whySTEM &&
-            lhs.usingSTEM == rhs.usingSTEM &&
+            lhs.whyPhysics == rhs.whyPhysics &&
+            lhs.usingPhysics == rhs.usingPhysics &&
             lhs.adviceForStudents == rhs.adviceForStudents &&
             lhs.field == rhs.field &&
             lhs.careerFactors == rhs.careerFactors
@@ -28,40 +28,40 @@ public struct ProfileData: Equatable, Identifiable {
     var name: String
     var career: String
     var whoIAm: String
-    var whySTEM: String
-    var usingSTEM: String
+    var whyPhysics: String
+    var usingPhysics: String
     var adviceForStudents: String
     var field: [String]
     var careerFactors: [String]
     
-    init(id: UUID = UUID(), photo: Image, name: String, career: String, whoIAm: String, whySTEM: String, usingSTEM: String, adviceForStudents: String, field: [String], careerFactors: [String]) {
+    init(id: UUID = UUID(), photo: Image, name: String, career: String, whoIAm: String, whyPhysics: String, usingPhysics: String, adviceForStudents: String, field: [String], careerFactors: [String]) {
         self.id = id
         self.photo = photo
         self.name = name
         self.career = career
         self.whoIAm = whoIAm
-        self.whySTEM = whySTEM
-        self.usingSTEM = usingSTEM
+        self.whyPhysics = whyPhysics
+        self.usingPhysics = usingPhysics
         self.adviceForStudents = adviceForStudents
         self.field = field
         self.careerFactors = careerFactors
     }
     
-    init(id: UUID = UUID(), photo: Image, name: String, career: String, whoIAm: String, whySTEM: String, usingSTEM: String, adviceForStudents: String) {
+    init(id: UUID = UUID(), photo: Image, name: String, career: String, whoIAm: String, whyPhysics: String, usingPhysics: String, adviceForStudents: String) {
         self.id = id
         self.photo = photo
         self.name = name
         self.career = career
         self.whoIAm = whoIAm
-        self.whySTEM = whySTEM
-        self.usingSTEM = usingSTEM
+        self.whyPhysics = whyPhysics
+        self.usingPhysics = usingPhysics
         self.adviceForStudents = adviceForStudents
         self.field = []
         self.careerFactors = []
     }
     
     func isComplete() -> Bool {
-        return photo != nil && !name.isBlank && !career.isBlank && !whoIAm.isBlank && !whySTEM.isBlank && !usingSTEM.isBlank && !adviceForStudents.isBlank
+        return photo != nil && !name.isBlank && !career.isBlank && !whoIAm.isBlank && !whyPhysics.isBlank && !usingPhysics.isBlank && !adviceForStudents.isBlank
     }
 }
 
@@ -86,8 +86,8 @@ extension ProfileData {
             name: Strings.Profile.NAME,
             career: Strings.Profile.CAREER,
             whoIAm: Strings.Profile.WhoIAm.PLACEHOLDER,
-            whySTEM: Strings.Profile.WhyStem.PLACEHOLDER,
-            usingSTEM: Strings.Profile.UsingStem.PLACEHOLDER,
+            whyPhysics: Strings.Profile.WhyPhysics.PLACEHOLDER,
+            usingPhysics: Strings.Profile.UsingPhysics.PLACEHOLDER,
             adviceForStudents: Strings.Profile.AdviceForStudents.PLACEHOLDER,
             field: [
                 Interests.Fields.computerScience
@@ -106,8 +106,8 @@ extension ProfileData {
             name: "Error",
             career: "Could not load profile",
             whoIAm: "",
-            whySTEM: "",
-            usingSTEM: "",
+            whyPhysics: "",
+            usingPhysics: "",
             adviceForStudents: "",
             field: [],
             careerFactors: []
@@ -143,8 +143,8 @@ extension DefaultsManager {
             name: getString(.name),
             career: getString(.career),
             whoIAm: getString(.whoIAm),
-            whySTEM: getString(.whySTEM),
-            usingSTEM: getString(.usingSTEM),
+            whyPhysics: getString(.whyPhysics),
+            usingPhysics: getString(.usingPhysics),
             adviceForStudents: getString(.advice)
         )
     }
@@ -153,8 +153,8 @@ extension DefaultsManager {
         setString(.name, profile.name)
         setString(.career, profile.career)
         setString(.whoIAm, profile.whoIAm)
-        setString(.whySTEM, profile.whySTEM)
-        setString(.usingSTEM, profile.usingSTEM)
+        setString(.whyPhysics, profile.whyPhysics)
+        setString(.usingPhysics, profile.usingPhysics)
         setString(.advice, profile.adviceForStudents)
     }
     

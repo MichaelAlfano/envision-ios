@@ -148,14 +148,14 @@
 		4BD024652837E77900265EE3 /* ProfessionalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsView.swift; sourceTree = "<group>"; };
 		4BD024672837E7D700265EE3 /* ProfessionalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsCell.swift; sourceTree = "<group>"; };
 		4BD024692837EEA800265EE3 /* ProfessionalsView+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfessionalsView+Presenter.swift"; sourceTree = "<group>"; };
-		4BD3C0C92829C66900EDA4C6 /* Envision STEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Envision STEM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3C0C92829C66900EDA4C6 /* Envision Physics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Envision Physics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0CC2829C66900EDA4C6 /* EnvisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionApp.swift; sourceTree = "<group>"; };
 		4BD3C0CE2829C66900EDA4C6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4BD3C0D02829C66B00EDA4C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BD3C0D32829C66B00EDA4C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4BD3C0D92829C66B00EDA4C6 /* Envision STEMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Envision STEMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3C0D92829C66B00EDA4C6 /* Envision PhysicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Envision PhysicsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0DD2829C66B00EDA4C6 /* EnvisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionTests.swift; sourceTree = "<group>"; };
-		4BD3C0E32829C66B00EDA4C6 /* Envision STEMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Envision STEMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD3C0E32829C66B00EDA4C6 /* Envision PhysicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Envision PhysicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD3C0E72829C66B00EDA4C6 /* EnvisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionUITests.swift; sourceTree = "<group>"; };
 		4BD3C0E92829C66B00EDA4C6 /* EnvisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -407,9 +407,9 @@
 		4BD3C0CA2829C66900EDA4C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3C0C92829C66900EDA4C6 /* Envision STEM.app */,
-				4BD3C0D92829C66B00EDA4C6 /* Envision STEMTests.xctest */,
-				4BD3C0E32829C66B00EDA4C6 /* Envision STEMUITests.xctest */,
+				4BD3C0C92829C66900EDA4C6 /* Envision Physics.app */,
+				4BD3C0D92829C66B00EDA4C6 /* Envision PhysicsTests.xctest */,
+				4BD3C0E32829C66B00EDA4C6 /* Envision PhysicsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,9 +477,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BD3C0C82829C66900EDA4C6 /* Envision STEM */ = {
+		4BD3C0C82829C66900EDA4C6 /* Envision Physics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3C0ED2829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision STEM" */;
+			buildConfigurationList = 4BD3C0ED2829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision Physics" */;
 			buildPhases = (
 				4BD3C0C52829C66900EDA4C6 /* Sources */,
 				4BD3C0C62829C66900EDA4C6 /* Frameworks */,
@@ -489,16 +489,16 @@
 			);
 			dependencies = (
 			);
-			name = "Envision STEM";
+			name = "Envision Physics";
 			packageProductDependencies = (
 			);
 			productName = Envision;
-			productReference = 4BD3C0C92829C66900EDA4C6 /* Envision STEM.app */;
+			productReference = 4BD3C0C92829C66900EDA4C6 /* Envision Physics.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BD3C0D82829C66B00EDA4C6 /* Envision STEMTests */ = {
+		4BD3C0D82829C66B00EDA4C6 /* Envision PhysicsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3C0F02829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision STEMTests" */;
+			buildConfigurationList = 4BD3C0F02829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision PhysicsTests" */;
 			buildPhases = (
 				4B9B19A92829F5F700B95696 /* R.swift */,
 				4BD3C0D52829C66B00EDA4C6 /* Sources */,
@@ -510,16 +510,16 @@
 			dependencies = (
 				4BD3C0DB2829C66B00EDA4C6 /* PBXTargetDependency */,
 			);
-			name = "Envision STEMTests";
+			name = "Envision PhysicsTests";
 			packageProductDependencies = (
 			);
 			productName = EnvisionTests;
-			productReference = 4BD3C0D92829C66B00EDA4C6 /* Envision STEMTests.xctest */;
+			productReference = 4BD3C0D92829C66B00EDA4C6 /* Envision PhysicsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4BD3C0E22829C66B00EDA4C6 /* Envision STEMUITests */ = {
+		4BD3C0E22829C66B00EDA4C6 /* Envision PhysicsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD3C0F32829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision STEMUITests" */;
+			buildConfigurationList = 4BD3C0F32829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision PhysicsUITests" */;
 			buildPhases = (
 				4B9B19AA2829F62D00B95696 /* R.swift */,
 				4BD3C0DF2829C66B00EDA4C6 /* Sources */,
@@ -531,11 +531,11 @@
 			dependencies = (
 				4BD3C0E52829C66B00EDA4C6 /* PBXTargetDependency */,
 			);
-			name = "Envision STEMUITests";
+			name = "Envision PhysicsUITests";
 			packageProductDependencies = (
 			);
 			productName = EnvisionUITests;
-			productReference = 4BD3C0E32829C66B00EDA4C6 /* Envision STEMUITests.xctest */;
+			productReference = 4BD3C0E32829C66B00EDA4C6 /* Envision PhysicsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -561,7 +561,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4BD3C0C42829C66900EDA4C6 /* Build configuration list for PBXProject "Envision STEM" */;
+			buildConfigurationList = 4BD3C0C42829C66900EDA4C6 /* Build configuration list for PBXProject "Envision Physics" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -576,9 +576,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BD3C0C82829C66900EDA4C6 /* Envision STEM */,
-				4BD3C0D82829C66B00EDA4C6 /* Envision STEMTests */,
-				4BD3C0E22829C66B00EDA4C6 /* Envision STEMUITests */,
+				4BD3C0C82829C66900EDA4C6 /* Envision Physics */,
+				4BD3C0D82829C66B00EDA4C6 /* Envision PhysicsTests */,
+				4BD3C0E22829C66B00EDA4C6 /* Envision PhysicsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -741,12 +741,12 @@
 /* Begin PBXTargetDependency section */
 		4BD3C0DB2829C66B00EDA4C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BD3C0C82829C66900EDA4C6 /* Envision STEM */;
+			target = 4BD3C0C82829C66900EDA4C6 /* Envision Physics */;
 			targetProxy = 4BD3C0DA2829C66B00EDA4C6 /* PBXContainerItemProxy */;
 		};
 		4BD3C0E52829C66B00EDA4C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BD3C0C82829C66900EDA4C6 /* Envision STEM */;
+			target = 4BD3C0C82829C66900EDA4C6 /* Envision Physics */;
 			targetProxy = 4BD3C0E42829C66B00EDA4C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -879,7 +879,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Envision/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Envision STEM";
+				INFOPLIST_KEY_CFBundleDisplayName = "Envision Physics";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is needed to add and change your profile photo.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We use this to add your profile to photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -916,7 +916,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Envision/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Envision STEM";
+				INFOPLIST_KEY_CFBundleDisplayName = "Envision Physics";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is needed to add and change your profile photo.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We use this to add your profile to photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -956,7 +956,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Envision STEM.app/Envision STEM";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Envision Physics.app/Envision Physics";
 			};
 			name = Debug;
 		};
@@ -976,7 +976,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Envision STEM.app/Envision STEM";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Envision Physics.app/Envision Physics";
 			};
 			name = Release;
 		};
@@ -1019,7 +1019,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BD3C0C42829C66900EDA4C6 /* Build configuration list for PBXProject "Envision STEM" */ = {
+		4BD3C0C42829C66900EDA4C6 /* Build configuration list for PBXProject "Envision Physics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BD3C0EB2829C66B00EDA4C6 /* Debug */,
@@ -1028,7 +1028,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3C0ED2829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision STEM" */ = {
+		4BD3C0ED2829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision Physics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BD3C0EE2829C66B00EDA4C6 /* Debug */,
@@ -1037,7 +1037,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3C0F02829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision STEMTests" */ = {
+		4BD3C0F02829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision PhysicsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BD3C0F12829C66B00EDA4C6 /* Debug */,
@@ -1046,7 +1046,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD3C0F32829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision STEMUITests" */ = {
+		4BD3C0F32829C66B00EDA4C6 /* Build configuration list for PBXNativeTarget "Envision PhysicsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BD3C0F42829C66B00EDA4C6 /* Debug */,

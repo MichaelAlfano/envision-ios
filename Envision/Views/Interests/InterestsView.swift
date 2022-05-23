@@ -109,11 +109,20 @@ struct InterestsView: View {
             }, label: {
                 Text(currentCategory == .career ? Strings.NEXT : Strings.FINISH)
             })
-            .disabled(currentCategory == .career ? ($stateInterests.career.count != 3) : ($stateInterests.fields.count != 2))
-            .opacity((currentCategory == .career ? ($stateInterests.career.count != 3) : ($stateInterests.fields.count != 2)) ? 0.4 : 1.0)
+            .disabled(continueDisabled)
+            .opacity(continueDisabled ? 0.4 : 1.0)
             .buttonStyle(OnboardingButton())
         }
         .animation(.easeInOut)
+    }
+    
+    private var continueDisabled: Bool {
+//        if currentCategory == .career {
+//            return $stateInterests.career.count != 3
+//        } else {
+//            return $stateInterests.fields.count != 2
+//        }
+        return false
     }
 }
 
