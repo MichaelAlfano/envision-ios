@@ -215,7 +215,6 @@ struct Home: View {
                 .background(Colors.primary)
                 .cornerRadius(8)
             })
-                
         }
         .padding(35)
         .padding(.bottom, 80)
