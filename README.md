@@ -16,7 +16,7 @@ App Store Listing - Coming Soon
 4. Make and export your own profile
 
 ## Flowchart
-![Flowchart](https://user-images.githubusercontent.com/59615799/169549052-c8250ad8-5a25-49eb-91bc-db3fcc460944.png)
+![Flowchart](https://user-images.githubusercontent.com/59615799/169916238-3d15ab7e-7a71-473a-b0a5-bf3cbcf35eb3.png)
 
 --------------------------
 
