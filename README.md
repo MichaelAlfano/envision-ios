@@ -5,7 +5,8 @@
 Envision matches your interests with those of industry professionals to show you career and educational pathways that you might be interested in.
 
 App Store Listing - Coming Soon
-[Testflight Link](https://testflight.apple.com/join/iHVUAtta))
+
+[Testflight Link](https://testflight.apple.com/join/iHVUAtta)
 
 ## Features
 
