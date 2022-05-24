@@ -56,13 +56,17 @@ class HomePresenter: ObservableObject {
         EmailHelper.shared.sendEmail(to: "michaelalfano2004@gmail.com")
     }
     
-    func openResource(url: URL) {
+    func openResource(url: URL?) {
         SFSafariHelper(url: url).present()
     }
     
     func linkedInAction() {
         let webURL = URL(string: "https://www.linkedin.com/in/michaelalfan0/")!
         UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+    }
+    
+    func apsWebsiteAction() {
+        openResource(url: URL(string: "https://aps.org/"))
     }
 }
 
