@@ -4,7 +4,7 @@
 
 Envision matches your interests with those of industry professionals to show you career and educational pathways that you might be interested in.
 
-App Store Listing - Coming Soon
+[App Store Listing](https://apps.apple.com/us/app/envision-physics/id1625221675)
 
 [Testflight Link](https://testflight.apple.com/join/iHVUAtta)
 
