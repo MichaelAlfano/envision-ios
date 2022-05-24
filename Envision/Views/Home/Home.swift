@@ -70,17 +70,12 @@ struct Home: View {
                 })
             }
                 .padding(.top, 40)
-            if interests.isComplete() && profile.isComplete() {
-                Divider()
-                    .padding(.top, 20)
-                    .padding(.bottom, -20)
-            } else {
-                Text(Strings.Home.SCREEN_SUBTITLE)
-                    .styling(TextStyles.footnote2)
-                    .padding(.top, 21)
-            }
+            Text(interests.isComplete() && profile.isComplete() ? "All action items have been completed." : Strings.Home.SCREEN_SUBTITLE)
+                .styling(TextStyles.footnote2)
+                .padding(.top, 21)
         }
         .padding(.horizontal, 30)
+        .padding(.top, 20)
     }
     
     private var actionItems: some View {
@@ -92,7 +87,8 @@ struct Home: View {
                         label: {
                             ActionCell(
                                 title: item.title,
-                                timeEstimate: item.timeEstimate
+                                timeEstimate: item.timeEstimate,
+                                isComplete: item.isComplete
                             )
                         }
                     )
@@ -100,6 +96,7 @@ struct Home: View {
                 }
                 .padding(10)
             }
+            .padding(.top, -10)
             .padding(20)
             .padding(.bottom, 5)
         }
@@ -221,8 +218,11 @@ struct Home: View {
                 .padding(5)
                 .padding(.leading, 14)
                 .padding(.trailing, 3)
-                .background(Colors.primary)
-                .cornerRadius(8)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundColor(Colors.primary)
+                        .shadow(color: Colors.dropShadow, radius: 6, x: 0, y: 3)
+                )
             })
             .padding(.bottom, 15)
             Menu(content: {
@@ -252,8 +252,11 @@ struct Home: View {
                 .padding(5)
                 .padding(.leading, 14)
                 .padding(.trailing, 3)
-                .background(Colors.primary)
-                .cornerRadius(8)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .foregroundColor(Colors.primary)
+                        .shadow(color: Colors.dropShadow, radius: 6, x: 0, y: 3)
+                )
             })
         }
         .padding([.horizontal, .bottom], 30)

@@ -13,7 +13,8 @@ extension ActionCellData {
         return ActionCellData(
             title: "Choose Interests",
             timeEstimate: "2 mins",
-            view: AnyView(EmptyView())
+            view: AnyView(EmptyView()),
+            isComplete: false
         )
     }
 }

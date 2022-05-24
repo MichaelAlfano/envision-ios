@@ -25,4 +25,6 @@ struct Colors {
     static let border = Color(hex: 0xE6E6E6)
     
     static let searchBar = Color(hex: 0xBBBBBB)
+    
+    static let green = Color(hex: 0x1F844E)
 }
