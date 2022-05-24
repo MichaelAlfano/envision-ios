@@ -184,7 +184,7 @@ struct ProfessionalsView: View {
                         .foregroundColor(Colors.secondary)
                         .shadow(color: Colors.dropShadow, radius: 12, x: 0, y: 3)
                 )
-                .padding(.horizontal, 16)
+                .padding([.horizontal, .top], 16)
             }
         }
     }
