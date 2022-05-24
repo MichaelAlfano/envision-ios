@@ -184,9 +184,9 @@ struct Home: View {
     }
     
     private var credit: some View {
-        VStack {
-            Text(Strings.MadeBy.TITLE)
-                .styling(TextStyles.title3)
+        VStack(alignment: .leading) {
+            Text("Credit")
+                .styling(TextStyles.title2)
             Menu(content: {
                 Button(action: presenter.linkedInAction) {
                     Label(
@@ -197,17 +197,56 @@ struct Home: View {
                 Button(action: presenter.emailAction) {
                     Label(
                         title: { Text(Strings.MadeBy.EMAIL) },
-                        icon: { Image(systemName: "envelope.fill") }
+                        icon: { Image(systemName: "envelope") }
                     )
                 }
             }, label: {
                 HStack {
-                    Text(Strings.MadeBy.NAME)
-                        .styling(TextStyles.title3Dark)
+                    VStack(alignment: .leading) {
+                        Text("Designer and developer")
+                            .styling(TextStyles.subtitle5)
+                            .padding(.bottom, 4)
+                        Text(Strings.MadeBy.NAME)
+                            .styling(TextStyles.title3Dark)
+                    }
+                    .padding(.vertical, 12)
+                    Spacer()
                     Image(AppAssets.Icons.chevronWhite)
                         .resizable()
-                        .frame(width: 24, height: 24)
+                        .frame(width: 30, height: 30)
                         .rotationEffect(.degrees(90))
+                        .padding(.trailing, 8)
+                }
+                .padding(5)
+                .padding(.leading, 14)
+                .padding(.trailing, 3)
+                .background(Colors.primary)
+                .cornerRadius(8)
+            })
+            .padding(.bottom, 15)
+            Menu(content: {
+                Button(action: presenter.apsWebsiteAction) {
+                    Label(
+                        title: { Text("Website") },
+                        icon: { Image(systemName: "safari") }
+                    )
+                }
+            }, label: {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("Provider of all industry professionals and the concept for profile creation.")
+                            .styling(TextStyles.subtitle5)
+                            .padding(.bottom, 4)
+                        Text("American Physical Society (APS)")
+                            .styling(TextStyles.title3Dark)
+                    }
+                    .padding(.vertical, 12)
+                    Spacer()
+                    Image(AppAssets.Icons.chevronWhite)
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .rotationEffect(.degrees(90))
+                        .padding(.trailing, 8)
                 }
                 .padding(5)
                 .padding(.leading, 14)
@@ -216,7 +255,7 @@ struct Home: View {
                 .cornerRadius(8)
             })
         }
-        .padding(35)
+        .padding([.horizontal, .bottom], 30)
         .padding(.bottom, 80)
     }
 }
