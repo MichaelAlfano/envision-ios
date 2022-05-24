@@ -117,11 +117,13 @@ struct InterestsView: View {
     }
     
     private var continueDisabled: Bool {
-        if currentCategory == .career {
-            return $stateInterests.career.count != 3
-        } else {
+        if #available(iOS 15.0, *) {
+            if currentCategory == .career {
+                return $stateInterests.career.count != 3
+            }
             return $stateInterests.fields.count != 2
         }
+        return false
     }
 }
 
