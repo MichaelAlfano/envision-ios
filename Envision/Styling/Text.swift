@@ -17,6 +17,7 @@ struct TextStyles {
     static let title3Dark = TextStyle(font: Fonts.title3, color: Colors.darkBackgroundText)
     static let title4 = TextStyle(font: Fonts.title4, color: Colors.primaryText)
     static let title5 = TextStyle(font: Fonts.title5, color: Colors.primaryText)
+    static let title6 = TextStyle(font: Fonts.title6, color: Colors.darkBackgroundText)
     
     static let subtitle1 = TextStyle(font: Fonts.subtitle1, color: Colors.primaryText)
     static let subtitle2 = TextStyle(font: Fonts.subtitle2, color: Colors.secondaryText)

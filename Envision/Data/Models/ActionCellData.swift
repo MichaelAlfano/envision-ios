@@ -12,4 +12,5 @@ struct ActionCellData: Identifiable {
     var title: String
     var timeEstimate: String
     var view: AnyView
+    var isComplete: Bool
 }

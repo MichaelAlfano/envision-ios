@@ -16,6 +16,7 @@ struct Fonts {
     static let title3 = Font.custom("Montserrat-SemiBold", size: 15)
     static let title4 = Font.custom("Montserrat-SemiBold", size: 14)
     static let title5 = Font.custom("Montserrat-Medium", size: 30)
+    static let title6 = Font.custom("Montserrat-SemiBold", size: 12)
     
     static let subtitle1 = Font.custom("Montserrat-Medium", size: 16)
     static let subtitle2 = Font.custom("Montserrat-Medium", size: 15)
