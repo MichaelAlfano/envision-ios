@@ -187,6 +187,7 @@ struct Home: View {
         VStack(alignment: .leading) {
             Text("Credit")
                 .styling(TextStyles.title2)
+                .padding(.bottom, 20)
             Menu(content: {
                 Button(action: presenter.linkedInAction) {
                     Label(
