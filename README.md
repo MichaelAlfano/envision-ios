@@ -4,7 +4,9 @@
 
 Envision matches your interests with those of industry professionals to show you career and educational pathways that you might be interested in.
 
-[App Store Listing](https://apps.apple.com/us/app/lure-cast/id1554271881) CHANGE UPON PUBLICATION
+[App Store Listing](https://apps.apple.com/us/app/envision-physics/id1625221675)
+
+[Testflight Link](https://testflight.apple.com/join/iHVUAtta)
 
 ## Features
 
@@ -14,10 +16,7 @@ Envision matches your interests with those of industry professionals to show you
 4. Make and export your own profile
 
 ## Flowchart
-![Flowchart](https://user-images.githubusercontent.com/59615799/169549052-c8250ad8-5a25-49eb-91bc-db3fcc460944.png)
-
-## Feature Prioritization
-![Feature Prioritization](https://user-images.githubusercontent.com/59615799/169589891-3c125d23-8f71-4c51-bbf9-e9ce87879831.png)
+![Flowchart](https://user-images.githubusercontent.com/59615799/169916238-3d15ab7e-7a71-473a-b0a5-bf3cbcf35eb3.png)
 
 --------------------------
 
