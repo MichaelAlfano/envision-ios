@@ -11,6 +11,7 @@
 		4B20B06B2833FD8000FCE0ED /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20B06A2833FD8000FCE0ED /* TextField.swift */; };
 		4B20B06D283406A300FCE0ED /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20B06C283406A300FCE0ED /* UIApplication+Extension.swift */; };
 		4B20B07428340CDA00FCE0ED /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20B07328340CDA00FCE0ED /* View+Extension.swift */; };
+		4B3B2493283DA9E000622D46 /* SetupProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B2492283DA9E000622D46 /* SetupProfileInfo.swift */; };
 		4B4D62702831E42000F12923 /* Home+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D626F2831E42000F12923 /* Home+Presenter.swift */; };
 		4B4D62742831E87900F12923 /* Email+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D62732831E87900F12923 /* Email+Helper.swift */; };
 		4B4F968A28348C9F0049F2B8 /* PDF+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F968928348C9F0049F2B8 /* PDF+Helper.swift */; };
@@ -95,6 +96,7 @@
 		4B20B06A2833FD8000FCE0ED /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		4B20B06C283406A300FCE0ED /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		4B20B07328340CDA00FCE0ED /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		4B3B2492283DA9E000622D46 /* SetupProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileInfo.swift; sourceTree = "<group>"; };
 		4B4D626F2831E42000F12923 /* Home+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Presenter.swift"; sourceTree = "<group>"; };
 		4B4D62732831E87900F12923 /* Email+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Email+Helper.swift"; sourceTree = "<group>"; };
 		4B4F968928348C9F0049F2B8 /* PDF+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDF+Helper.swift"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				4B7D2FCD28332F30001A2037 /* SetupProfile.swift */,
 				4B7D2FCF28332F87001A2037 /* SetupProfile+Presenter.swift */,
+				4B3B2492283DA9E000622D46 /* SetupProfileInfo.swift */,
 			);
 			path = "Setup Profile";
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				4BC3BDFF282D6938005B3E6F /* ActionCell.swift in Sources */,
 				4BC3BE02282DC3E2005B3E6F /* ProfileCellData+Stub.swift in Sources */,
 				4BD3C0CD2829C66900EDA4C6 /* EnvisionApp.swift in Sources */,
+				4B3B2493283DA9E000622D46 /* SetupProfileInfo.swift in Sources */,
 				4B7D2FBF283310FA001A2037 /* ProfileCell.swift in Sources */,
 				4BC3BE08282DC55D005B3E6F /* ActionCellData+Stub.swift in Sources */,
 			);

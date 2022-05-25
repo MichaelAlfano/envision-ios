@@ -34,6 +34,8 @@ class DefaultsManager {
             return RawKeys.CAREER_INTERESTS
         case .fieldInterests:
             return RawKeys.FIELD_INTERESTS
+        case .profileSetup:
+            return RawKeys.PROFILE_SETUP
         }
     }
     
@@ -73,6 +75,7 @@ enum DefaultKeys: String {
     case advice
     case careerInterests
     case fieldInterests
+    case profileSetup
 }
 
 fileprivate class RawKeys {
@@ -86,4 +89,5 @@ fileprivate class RawKeys {
     static let ADVICE = "advice"
     static let CAREER_INTERESTS = "career-interests"
     static let FIELD_INTERESTS = "field-interests"
+    static let PROFILE_SETUP = "profile-setup"
 }
