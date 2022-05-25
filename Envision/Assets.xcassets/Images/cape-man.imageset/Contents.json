@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "cape-man.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

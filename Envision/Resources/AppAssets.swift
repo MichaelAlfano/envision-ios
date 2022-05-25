@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct AppAssets {
-    struct Icons {
+enum AppAssets {
+    enum Icons {
         static let check = "check-black"
         static let chevronWhite = "chevron-white"
         static let chevronBlack = "chevron-black"
@@ -23,7 +23,7 @@ struct AppAssets {
         }
     }
     
-    struct Images {
+    enum Images {
         static let onboarding1 = "onboarding1"
         static let onboarding2 = "onboarding2"
         static let testProffesional = "test-proffesional-1"
@@ -41,9 +41,11 @@ struct AppAssets {
         static let sixtySymbols = "sixty-symbols-image"
         static let veritasium = "veritasium-image"
         static let pbs = "pbs-image"
+        static let identityCard = "identity-card"
+        static let capeMan = "cape-man"
     }
     
-    struct Brand {
+    enum Brand {
         static let logo = "launch-screen-logo"
     }
 }

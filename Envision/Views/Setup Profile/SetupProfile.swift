@@ -16,6 +16,7 @@ struct SetupProfile: View {
     let defaultsManager: DefaultsManager
     
     @State private var showImagePicker: Bool = false
+    @State private var showIntroSheet: Bool = false
     @State private var pickerSource: UIImagePickerController.SourceType = .camera
     
     var body: some View {
@@ -31,6 +32,7 @@ struct SetupProfile: View {
                         .id(Strings.Profile.UsingPhysics.TITLE)
                     profileItem(title: Strings.Profile.AdviceForStudents.TITLE, content: $stateProfile.adviceForStudents, subtitle: Strings.Profile.AdviceForStudents.PLACEHOLDER, proxy: proxy)
                         .id(Strings.Profile.AdviceForStudents.TITLE)
+                    moreInformationButton
                 }
                 .padding(.bottom, 30)
             }
@@ -62,11 +64,44 @@ struct SetupProfile: View {
                     }
                 )
             }
+            .sheet(isPresented: $showIntroSheet) {
+                SetupProfileInfo()
+            }
+            .onAppear {
+                let setupOpenCount = defaultsManager.getInt(.profileSetup)
+                if setupOpenCount > 0 {
+                    defaultsManager.setInt(.profileSetup, setupOpenCount+1)
+                } else {
+                    defaultsManager.setInt(.profileSetup, 1)
+                    showIntroSheet = true
+                }
+            }
             .onDisappear {
                 defaultsManager.updateProfile(stateProfile)
                 profile = stateProfile
             }
         }
+    }
+    
+    private var moreInformationButton: some View {
+        Button(action: {
+            showIntroSheet = true
+        }, label: {
+            HStack {
+                Text("More Information")
+                    .styling(TextStyles.title3Dark)
+                Image(AppAssets.Icons.chevronWhite)
+                    .resizable()
+                    .frame(width: 24, height: 24)
+                    .rotationEffect(.degrees(-90))
+            }
+            .padding(5)
+            .padding(.leading, 14)
+            .padding(.trailing, 3)
+            .background(Colors.primary)
+            .cornerRadius(8)
+        })
+        .padding(.top, 40)
     }
     
     var header: some View {

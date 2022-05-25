@@ -23,8 +23,7 @@ struct Colors {
     static let dropShadow = Color(hex: 0x000000, alpha: 0.16)
     static let textFieldBorder = Color(hex: 0xEAE9EF)
     static let border = Color(hex: 0xE6E6E6)
-    
     static let searchBar = Color(hex: 0xBBBBBB)
-    
     static let green = Color(hex: 0x1F844E)
+    static let capsuleColor = Color(hex: 0x9599B3)
 }
