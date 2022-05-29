@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct Onboarding2: View {
+    @State var connector: Connector
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Onboarding2Preview: PreviewProvider {
-    static var previews: some View {
-        Onboarding2()
+        OnboardingView(
+            photo: Image(AppAssets.Images.onboarding2),
+            title: Strings.Onboarding.Slide2.TITLE,
+            subTitle: Strings.Onboarding.Slide2.SUB_TITLE,
+            buttonText: Strings.Onboarding.Slide2.BUTTON,
+            buttonDestination: AnyView(connector.makeHomeView()),
+            index: 1,
+            connector: connector
+        )
     }
 }

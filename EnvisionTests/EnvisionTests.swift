@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Envision
+@testable import Envision_Physics
 
 class EnvisionTests: XCTestCase {
 

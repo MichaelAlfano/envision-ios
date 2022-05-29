@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ProfileDataEntity" representedClassName="ProfileDataEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="adviceForStudents" optional="YES" attributeType="String"/>
+        <attribute name="career" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <attribute name="profileID" optional="YES" attributeType="String"/>
+        <attribute name="usingSTEM" optional="YES" attributeType="String"/>
+        <attribute name="whoIAm" optional="YES" attributeType="String"/>
+        <attribute name="whySTEM" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ProfileDataEntity" positionX="-54" positionY="-9" width="128" height="163"/>
+    </elements>
+</model>
