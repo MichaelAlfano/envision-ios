@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Note: Example content
 extension Content {
     static let profiles: [ProfileData] = [
         ProfileData(
